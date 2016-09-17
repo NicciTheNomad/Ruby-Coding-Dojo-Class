@@ -11,6 +11,9 @@ ul.red_links li a{
 h2{
   color: darkred;
 }
+h3{
+  color: white;
+}
 hr {
     display: block;
     margin-top: 0.5em;
@@ -25,7 +28,23 @@ hr {
   display: inline;
   text-align: right;
 }
-
+#header_left{
+  width: 500px;
+  height: 63px;
+  display: inline-block;
+}
+#header_right{
+  width: 270px;
+  height: 63px;
+  display: inline-block;
+  vertical-align: top;
+  font-size:10px;
+}
+#header h3{
+  display: inline;
+  padding: 0px 0px 10px 0px;
+  /*margin: 20px 0px 20px 0px;*/
+}
 #header_bar li{
   display:inline;
 }
@@ -43,7 +62,7 @@ ul.sidebar_list li:before {
 
 #wrapper{
   display: inline-block;
-  width: 1000px;
+  width: 970px;
   height: auto;
   margin: 0px;
   background-color: white;
@@ -51,7 +70,7 @@ ul.sidebar_list li:before {
 
 #header{
   display: inline-block;
-  width: 900px;
+  width: 970px;
   height: auto;
   padding:10px;
   background-color: darkred;
@@ -59,7 +78,7 @@ ul.sidebar_list li:before {
 
 #header_bar{
   display: inline-block;
-  width: 900px;
+  width: 970px;
   height: auto;
   background-color: silver;
 }
@@ -82,3 +101,6 @@ ul.sidebar_list li:before {
   padding: 10px;
   background-color: white;
  }
+/*button{
+  display: inline-block;
+}*/
