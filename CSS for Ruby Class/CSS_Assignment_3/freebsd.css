@@ -8,6 +8,12 @@
 ul.red_links li a{
   color: red;
 }
+ul.pads li{
+  padding-left:40px;
+}
+ol.pads li{
+  padding-left:40px;
+}
 h2{
   color: darkred;
 }
@@ -23,6 +29,13 @@ hr {
     border-style: inset;
     border-width: 1px;
 }
+form {
+  display: inline;
+}
+input{
+  display: inline;
+}
+
 
 #header_list_1 li{
   display: inline;
@@ -34,11 +47,12 @@ hr {
   display: inline-block;
 }
 #header_right{
-  width: 270px;
+  width: 360px;
   height: 63px;
   display: inline-block;
   vertical-align: top;
-  font-size:10px;
+  font-size:11px;
+  text-align: right;
 }
 #header h3{
   display: inline;

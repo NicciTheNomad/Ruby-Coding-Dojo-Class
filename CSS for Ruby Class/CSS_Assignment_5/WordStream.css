@@ -1,0 +1,53 @@
+/*CSS reset settings here*/
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+#wrapper{
+  width: 970px;
+  height: 850px;
+  background-color: lightgreen;
+}
+#header{
+  width: 970px;
+  header: 200px;
+  background-color: lightpink;
+  opacity: .5;
+  display: inline-block;
+}
+ul.header li {
+  color: grey;
+  padding: 1px;
+}
+#main_content{
+  width: 970px;
+  height: 600px;
+  background-color: silver;
+  display: inline-block;
+}
+#main_left{
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightblue;
+  display: inline-block;
+}
+#main_right{
+  width: 450px;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  background-color: purple;
+  opacity: 0.5;
+}
+h1{
+  color: white;
+  font-family: sans-serif;
+  padding: 15px;
+}
+ul.header {
+  display: inline;
+}
