@@ -1,0 +1,93 @@
+/*CSS reset settings here*/
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+#wrapper{
+  width: 970px;
+  height: 850px;
+}
+#header{
+  width: 970px;
+  header: 200px;
+  display: inline-block;
+}
+.bottom_header{
+	background-color: #3498db;
+	color: white;
+	padding: 10px;
+}
+.login{
+	background-color: #3498db;
+	position: absolute;
+	padding: 3px;
+	top: 10px;
+	left: 920px;
+}
+ul.header_links_a li a{
+	text-decoration: none;
+  color: grey;
+  padding: 5px;
+	background-color: #f8f9f9;
+}
+.word_grey{
+	color:  #808b96;
+}
+.word_blue{
+	color: #3498db;
+}
+h1{
+	display: inline;
+}
+#main_content{
+  width: 970px;
+  height: 600px;
+  display: inline-block;
+}
+#main_left{
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+	position: relative;
+}
+#main_right{
+  width: 450px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+img.ruler_img{
+position:relative;
+left:10px;
+top:100px;
+z-index:-1;
+}
+p.ruler_para{
+	position: relative;
+	left: 10px;
+	top: 200px;
+	padding: 0px;
+	margin: 0px;
+}
+
+button.ruler_button{
+	position: relative;
+	left: 25px;
+	top: 260px;
+	color: #1f618d;
+	/*width: 155px;*/
+}
+h1{
+  color: white;
+  font-family: sans-serif;
+  padding: 15px;
+}
+ul.header_links li{
+  display: inline;
+}
