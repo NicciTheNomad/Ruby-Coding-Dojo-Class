@@ -8,46 +8,109 @@
 #wrapper{
   width: 970px;
   height: 850px;
-  background-color: lightgreen;
 }
 #header{
   width: 970px;
   header: 200px;
-  background-color: lightpink;
-  opacity: .5;
   display: inline-block;
 }
-ul.header li {
+/*button rules*/
+.bottom_header{
+	background-color: #3498db;
+	color: white;
+	padding: 10px;
+}
+.header_button{
+	background: linear-gradient (lightblue, blue);
+	/*background-color: blue;*/
+	position: absolute;
+	padding: 3px 15px;
+	top: 10px;
+	left: 920px;
+	color: white;
+	border-radius: 3px;
+	font-weight: bold;
+}
+button.ruler_button{
+	position: relative;
+	left: 25px;
+	top: 260px;
+	color: #1f618d;
+	/*width: 155px;*/
+}
+button.green{
+	background-color: green;
+	color: white;
+	padding: 10px 15px;
+	text: bold;
+}
+button.orange{
+	background-color: orange;
+	color: white;
+}
+ul.header_links_a li a{
+	text-decoration: none;
   color: grey;
-  padding: 1px;
+  padding: 5px;
+	background-color: #f8f9f9;
 }
-#main_content{
-  width: 970px;
-  height: 600px;
-  background-color: silver;
-  display: inline-block;
+.word_grey{
+	color:  #808b96;
 }
-#main_left{
-  width: 300px;
-  height: auto;
-  padding: 10px;
-  margin: 10px;
-  background-color: lightblue;
-  display: inline-block;
-}
-#main_right{
-  width: 450px;
-  height: auto;
-  padding: 10px;
-  margin: 10px;
-  background-color: purple;
-  opacity: 0.5;
+.word_blue{
+	color: #3498db;
 }
 h1{
+	display: inline;
   color: white;
   font-family: sans-serif;
   padding: 15px;
 }
-ul.header {
+h4{
+	color: #3498db;
+}
+#main_content{
+  width: 970px;
+  height: 600px;
+  display: inline-block;
+}
+#main_left{
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+	position: relative;
+}
+#main_right{
+  width: 450px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+img.ruler_img{
+position:relative;
+left:10px;
+top:100px;
+z-index:-1;
+}
+p.ruler_para{
+	position: relative;
+	left: 10px;
+	top: 200px;
+	padding: 0px;
+	margin: 0px;
+}
+ul.header_links li{
   display: inline;
+}
+.buttom_box{
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: auto;
+	border: 5px solid #3498db;
 }

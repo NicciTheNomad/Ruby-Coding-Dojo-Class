@@ -1,0 +1,156 @@
+/*CSS reset settings here*/
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+  font-family: sans-serif;
+	}
+/*h3.abs_position{
+	position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 450px;
+  height: 100px;
+  text-align: center;
+  background-color: lightgrey;
+
+	}*/
+#wrapper{
+  width: 970px;
+  height: auto;
+  /*background-color: pink;*/
+  /*padding: 10px 0px 0px 10px*/
+}
+#header{
+  position: relative;
+  width: 970px;
+  height: 100px;
+  background: linear-gradient( #F2F3F4,white);
+  padding: 0px 0px 0px 30px;
+}
+img.header_logo{
+  /*opacity: .5;*/
+}
+span.header_text{
+  position: absolute;
+  top: 0px;
+  right: 60px;
+  width: 532px;
+  height: auto;
+  text-align: right;
+  padding: 40px 10px 10px 10px;
+}
+hr{
+  border:0;
+  height: 1px;
+  background: #333;
+  background-image:linear-gradient(to right,#ccc,#333,#ccc);
+}
+ul.header_links li a{
+  text-decoration: none;
+}
+ul.header_links li {
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    display: inline;
+		/*text-decoration: none;*/
+		color: darkgrey;
+    padding: 5px 10px 5px 15px;
+    font-size: 10px;
+}
+
+#main_content{
+  width: 950px;
+  height: 600px;
+  background-color:black;
+  padding: 10px 0px 0px 20px;
+}
+#main_text{
+  width: 470px;
+  height: 263px;
+	/*padding: 10px;*/
+	margin: 10px;
+	vertical-align: top;
+  /*background-color: darkgray;*/
+  display: inline-block;
+  color: #ECF0F1;
+  font-size: 10px;
+  background: linear-gradient(to right, lightgray , gray);
+}
+
+img.subcontent_pic{
+  width:209px;
+  height:auto;
+  display: inline-block;
+}
+img.main_pic{
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  margin: 10px;
+}
+img.small_logo_pic{
+  width: 60px;
+  height: auto;
+  text-align: left;
+  color: lightgreen;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2{
+  background-color: yellow;
+}
+.subcontents{
+  position:relative;
+  width: 209px;
+  height: 270px;
+  background-color: lightgray;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  vertical-align: top;
+  font-size: 10px;
+  background: linear-gradient(white,#FCF3CF);
+}
+p.testposition{
+  width: 209px;
+  height: 150px;
+}
+
+.readmore{
+  position: absolute;
+  top:225px;
+  right:20px;
+  width: 60px;
+  height: 15px;
+  border: 1px solid darkgrey;
+  border-radius:5px;
+  background: linear-gradient(#F9E79F,#F1C40F);
+  vertical-align: bottom;
+  text-align: center;
+}
+#midbar{
+  color: #B7950B;
+  font-size: 12px;
+  /*padding: 0px 0px 4px 0px;*/
+  margin-left: 10px;
+  width: 950px;
+  height: auto;
+}
+
+h3.bar{
+  height: 12px;
+  padding: 7px 0px 7px 7px;
+  color: black;
+  font-size: 10px;
+  background: linear-gradient(#F9E79F,#F1C40F);
+
+}
+p{
+  padding: 20px 20px 0px 20px;
+}
+b.pad{
+  padding-left: 20px;
+  font-size: 12px;
+}

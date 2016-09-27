@@ -1,12 +1,22 @@
 *{
-  font-family: "tahoma";
+  /*font-family: "tahoma";*/
   margin: 0px;
   padding: 0px;
   outline: 0px;
   border: 0px;
 }
-ul.red_links li a{
-  color: red;
+.red_links li a{
+  color: darkred;
+}
+ul.no_line li a{
+  text-decoration: none;
+  color: grey;
+}
+.search_button{
+  background-color: darkred;
+  color: white;
+  border: 1px solid white;
+  font-size: 11px;
 }
 ul.pads li{
   padding-left:40px;
@@ -14,13 +24,18 @@ ul.pads li{
 ol.pads li{
   padding-left:40px;
 }
-h2{
+h2, h4{
   color: darkred;
 }
-h3{
+span{
   color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: auto;
 }
-hr {
+hr{
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -35,16 +50,21 @@ form {
 input{
   display: inline;
 }
-
-
-#header_list_1 li{
+.header_list_1 li{
   display: inline;
   text-align: right;
+  color: white;
+  font-size: 11px;
+}
+ul.white_link li a{
+  /*text-decoration: none;*/
+  color: #ffff4d;
 }
 #header_left{
   width: 500px;
   height: 63px;
   display: inline-block;
+  position: relative;
 }
 #header_right{
   width: 360px;
@@ -60,7 +80,7 @@ input{
   /*margin: 20px 0px 20px 0px;*/
 }
 #header_bar li{
-  display:inline;
+  display: inline;
 }
 
 ul.sidebar_list {
@@ -71,7 +91,7 @@ ul.sidebar_list {
 
 ul.sidebar_list li:before {
   content: "\00bb";
-  color: red;
+  color: darkred;
 }
 
 #wrapper{
@@ -95,11 +115,12 @@ ul.sidebar_list li:before {
   width: 970px;
   height: auto;
   background-color: silver;
+  padding: 10px;
 }
 
 #sidebar{
   display: inline-block;
-  width: 100px;
+  width: 185px;
   height: auto;
   margin: 15px;
   padding: 10px;
@@ -109,7 +130,7 @@ ul.sidebar_list li:before {
 #main_content{
   display: inline-block;
   vertical-align: top;
-  width: 700px;
+  width: 675px;
   height: auto;
   margin: 15px;
   padding: 10px;

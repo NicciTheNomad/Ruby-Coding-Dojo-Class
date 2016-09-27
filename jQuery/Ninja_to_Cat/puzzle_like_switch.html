@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Switching Cat / Ninja</title>
+    <link rel="stylesheet" href="ninja_switch.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#show").click(function(){
+            //   $("img").show();
+            // })
+            $('img').click(function(){
+              if($(this).attr('src')=="ninja0.png"){
+                $(this).attr('src', "cat0.png");
+              }
+              else if ($(this).attr('src')=="cat0.png") {
+                $(this).attr('src', "ninja0.png");
+              }
+
+              if($(this).attr('src')=="ninja1.png"){
+                $(this).attr('src', "cat1.png");
+              }
+              else if ($(this).attr('src')=="cat1.png") {
+                $(this).attr('src', "ninja1.png");
+              }
+
+              if($(this).attr('src')=="ninja2.png"){
+                $(this).attr('src', "cat2.png");
+              }
+              else if ($(this).attr('src')=="cat2.png") {
+                $(this).attr('src', "ninja2.png");
+              }
+
+              if($(this).attr('src')=="ninja3.png"){
+                $(this).attr('src', "cat3.png");
+              }
+
+              else if ($(this).attr('src')=="cat3.png") {
+                $(this).attr('src', "ninja3.png");
+              }
+
+              if($(this).attr('src')=="ninja4.png"){
+                $(this).attr('src', "cat4.png");
+              }
+              else if ($(this).attr('src')=="cat4.png") {
+                $(this).attr('src', "ninja4.png");
+              }
+            })
+        });
+    </script>
+</head>
+<body>
+  <div id="header">
+    <div class="images subcontents">
+      <img src="ninja0.png" alt="ninja" />
+      <br>
+      <img src="ninja1.png" alt="ninja" />
+      <br>
+      <img src="ninja2.png" alt="ninja" />
+      <br>
+      <img src="ninja3.png" alt="ninja" />
+      <br>
+      <img src="ninja4.png" alt="ninja" />
+    </div>
+  </div>
+</body>
+</html>
