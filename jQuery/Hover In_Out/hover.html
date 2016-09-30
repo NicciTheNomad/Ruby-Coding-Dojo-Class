@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hover Assignment</title>
+    <link rel="stylesheet" href="hover.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+    // $(document).ready(function(){
+    //   $("img").hover(function(){
+    //     var temp = $(this).attr("src");
+    //     $(this).attr("src", $(this).attr("data-alt-src"));
+    //     $(this).attr("data-alt-src", temp);
+    //   });
+    // });
+
+      $(document).ready(function(){
+
+        $("#hide").click(function(){
+          $("img").hide();
+        })
+
+        $("#show").click(function(){
+          $("img").show();
+        })
+
+        $("img").hover(function(){
+          $("img").show(src="morgiana1.png");
+        })
+
+      });
+
+    // $('img').hover( handlerIn, handlerOut )
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="subcontent">
+        <img id="hide" src="morgiana1.png" alt="" />
+        <br>
+        <p id="show">
+          looking for any text?
+        </p>
+        <img src="morgiana2.png" alt="" />
+      </div>
+      <div class="second_subcontent">
+        <img src="morgiana1.png" alt="" />
+        <h3>
+          hoping to figure out hover
+        </h3>
+        <img src="morgiana2.png" alt="" />
+      </div>
+      <div id="images">
+        <ul>
+          <!-- <li src="morgiana1.png"></li> -->
+          <li><img src="morgiana2.png" width="50px" height="50px"><a href="#">Click here.</a></li>
+        </ul>
+        <ul>
+          <li><img src="morgiana2.png" width="50px" height="50px"><img src="morgiana1.png" width="50px" height="50px"></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
