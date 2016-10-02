@@ -8,17 +8,35 @@
     <script>
       $(document).ready(function(){
         $('.button_message').click(function(){
-          alert('you clicked a button, which used the click function!')
+          alert('you clicked a button, which used the click function!');
         })
 
         $('p').addClass('blue style background');
 
+        $('new_btn').click(function(){
+          $('buttons').append('<button> I am dynamically generated</button>');
+        })
+
         $('.html').click(function(){
           $('.html_img').html('<img src="ninja.png" />');
-        })
-        // $('#html_1').html('img src="yona2.png"');
+        });
 
-        // $('#append_1').empty().append('img src="yona2.png"');
+        $(function(){
+          var $textMemInput=$('input:text');
+            $newitemform.on('submit'{
+            var newText=$textMemInput.val();
+            $('li:last').after('<li>' + newText + '</li>');
+          });
+        });
+
+        $('.button_text').click(function(){
+          alert($("div#container").text());
+        });
+        $('.button_textb').click(function(){
+          alert($("div.text_1").text());
+        })
+
+
         $('.append').click(function(){
           $('.yona_img').append('<img src="ninja.png" />');
         })
@@ -27,7 +45,7 @@
   </head>
   <body>
     <div id="container">
-      <div class="click">
+      <div class="click_1">
         <img src="ninja.png" />
         <button class="button_message" type="button" name="button">Click here to see click.</button>
 
@@ -35,7 +53,7 @@
       <br>
       <hr>
       <br>
-      <div id="addclass">
+      <div class="addclass_1">
         <p>
           ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
@@ -44,19 +62,35 @@
       <br>
       <hr>
       <br>
-      <div id="val">
-
+      <div class="val_1">
+        <button type="button" name="button">Favorite memory...</button>
+        <form id="newitemform">
+          <input type="text" id="itemDescription" placeholder="Add memory description.." />
+          <input type="submit" id='addButton' value="add">
+        </form>
+        <p>
+          Your favorite memories include:
+          <ul>
+            <li>first one?</li>
+          </ul>
+        </p>
       </div>
       <br>
       <hr>
       <br>
-      <div id="text">
-
+      <div class="text_1">
+        <button class="button_text" type="button" name="button">Click to see text work</button>
+        <button class="button_textb" type="button" name="button"> next text button</button>
+        <ul>
+          <li>Trying</li>
+          <li>to </li>
+          <li>understand </li>
+        </ul>
       </div>
       <br>
       <hr>
       <br>
-      <div id="attr">
+      <div class="attr_1">
 
       </div>
       <br>
@@ -69,25 +103,25 @@
       <br>
       <hr>
       <br>
-      <div id="focus">
+      <div class="focus_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="data">
+      <div class="data_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="before">
+      <div class="before_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="after">
+      <div class="after_1">
 
       </div>
       <br>
@@ -95,49 +129,53 @@
       <br>
       <div class="append_1 yona_img">
         <img src="yona1.png" height="64px" width="64px" />
-        <button class="append" type="button" name="button">Click to see next Yona pix</button>
+        <button class="append" type="button" name="button">Click to see .append add a pix with each click!</button>
+        <div>
+          <button class="new_btn">Click for another button</button>
+        </div>
+        <div id="buttons">
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <div class="show_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="show">
+      <div class="hide_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="hide">
+      <div class="toggle_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="toggle">
+      <div class="fadein_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="fadein">
+      <div class="fadeout_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="fadeout">
+      <div class="slidedown_1">
 
       </div>
       <br>
       <hr>
       <br>
-      <div id="slidedown">
-
-      </div>
-      <br>
-      <hr>
-      <br>
-      <div id="slidetoggle">
+      <div class="slidetoggle_1">
 
       </div>
       <br>

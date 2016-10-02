@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hover Assignment-2nd try!</title>
+    <link rel="stylesheet" href="hover.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+    // $(document).ready(function(){
+    //   $("img").hover(function(){
+    //     var temp = $(this).attr("src");
+    //     $(this).attr("src", $(this).attr("data-alt-src"));
+    //     $(this).attr("data-alt-src", temp);
+    //   });
+    // });
+
+      $(document).ready(function(){
+
+        // $("img").hover(function(){
+        //   if($(this).attr('src')=="yona1.png"){
+        //     $(this).attr('src', "yona2.png");
+        //   }
+        //   else{
+        //     $(this).attr('src', "yona1.png");
+        //   }
+        // })
+        //
+        // $("img").hover(function(){
+        //   if($(this).attr('src')=="morgiana1.png"){
+        //     $(this).attr('src', "morgiana2.png");
+        //   }
+        //   else{
+        //     $(this).attr('src', "morgiana1.png");
+        //   }
+        // })
+        //
+        // $("img").hover(function(){
+        //   if($(this).attr('src')=="hinata1.png"){
+        //     $(this).attr('src', "hinata2.png");
+        //   }
+        //   else{
+        //     $(this).attr('src', "hinata1.png");
+        //   }
+        // })
+
+        $("img").hover(function(){
+          if($(this).attr('src')=="horimiya1.png"){
+            $(this).attr('src', "horimiya2.png");
+          }
+          else{
+            $(this).attr('src', "horimiya1.png");
+          }
+        })
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="yona">
+        <img src="yona1.png" width="100px" height="100px" />
+      </div>
+      <div class="morgiana">
+        <img src="morgiana1.png" width="100px" height="100px" />
+      </div>
+      <div class="hinata">
+          <img src="hinata1.png" width="100px" height="100px" />
+      </div>
+      <div class="hori">
+        <img src="horimiya1.png" width="100px" height="100px" />
+      </div>
+    </div>
+  </body>
+</html>

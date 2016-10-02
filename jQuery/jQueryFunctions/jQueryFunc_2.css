@@ -4,61 +4,64 @@
   margin: 0;
   border: 0;
 }
-.click{
+.click_1{
 
 }
-#addclick{
+.addclick_1{
 
 }
-#val{
+.val_1{
 
 }
-#text{
+.text_1{
 
 }
-#attr{
+.text_2{
+  
+}
+.attr_1{
 
 }
 .html_1{
 
 }
-#focus{
+.focus_1{
 
 }
-#data{
+.data_1{
 
 }
-#before{
+.before_1{
 
 }
-#after{
+.after_1{
 
 }
 .append_1{
 
 }
-#show{
+.show_1{
 
 }
-#hide{
+.hide_1{
 
 }
-#toggle{
+.toggle_1{
 
 }
-#fadein{
+.fadein_1{
 
 }
-#fadeout{
+.fadeout_1{
 
 }
-#slideout{
+.slideout_1{
 
 }
-#slidedown{
+.slidedown_1{
 
 }
-#slidetoggle{
+.slidetoggle_1{
 
 }
 hr {

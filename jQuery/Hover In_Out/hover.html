@@ -16,49 +16,51 @@
 
       $(document).ready(function(){
 
-        $("#hide").click(function(){
-          $("img").hide();
+        $("img.yona").hover(function(){
+          if($(this).attr('src')=="yona1.png"){
+            $(this).attr('src', "yona2.png");
+          }
+          else{
+            $(this).attr('src', "yona1.png");
+          }
         })
 
-        $("#show").click(function(){
-          $("img").show();
+        $("img.morgiana").hover(function(){
+          if($(this).attr('src')=="morgiana1.png"){
+            $(this).attr('src', "morgiana2.png");
+          }
+          else{
+            $(this).attr('src', "morgiana1.png");
+          }
         })
 
-        $("img").hover(function(){
-          $("img").show(src="morgiana1.png");
+        $("img.hinata").hover(function(){
+          if($(this).attr('src')=="hinata1.png"){
+            $(this).attr('src', "hinata2.png");
+          }
+          else{
+            $(this).attr('src', "hinata1.png");
+          }
         })
 
+        $("img.hori").hover(function(){
+          if($(this).attr('src')=="horimiya1.png"){
+            $(this).attr('src', "horimiya2.png");
+          }
+          else{
+            $(this).attr('src', "horimiya1.png");
+          }
+        })
       });
 
-    // $('img').hover( handlerIn, handlerOut )
     </script>
   </head>
   <body>
     <div id="wrapper">
-      <div class="subcontent">
-        <img id="hide" src="morgiana1.png" alt="" />
-        <br>
-        <p id="show">
-          looking for any text?
-        </p>
-        <img src="morgiana2.png" alt="" />
-      </div>
-      <div class="second_subcontent">
-        <img src="morgiana1.png" alt="" />
-        <h3>
-          hoping to figure out hover
-        </h3>
-        <img src="morgiana2.png" alt="" />
-      </div>
-      <div id="images">
-        <ul>
-          <!-- <li src="morgiana1.png"></li> -->
-          <li><img src="morgiana2.png" width="50px" height="50px"><a href="#">Click here.</a></li>
-        </ul>
-        <ul>
-          <li><img src="morgiana2.png" width="50px" height="50px"><img src="morgiana1.png" width="50px" height="50px"></li>
-        </ul>
-      </div>
+        <img class="yona" src="yona1.png" data-alt-src="yona2.png" />
+        <img class="morgiana" src="morgiana1.png" data-alt-src="morgiana2.png" width="100px" height="100px" />
+        <img class="hinata" src="hinata1.png" width="100px" height="100px" />
+        <img class="hori" src="horimiya1.png" width="100px" height="100px" />
     </div>
   </body>
 </html>

@@ -7,17 +7,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            // $("#show").click(function(){
-            //   $("img").show();
+
+            // $('img').click(function(){
+            //   if($(this).attr('src')=="ninja.png"){
+            //     $(this).attr('src', "phone.png");
+            //   }
+            //   else{
+            //       $(this).attr('src', "ninja.png");
+            //   }
             // })
-            $('img').click(function(){
+
+            $('img').hover(function(){
               if($(this).attr('src')=="ninja.png"){
                 $(this).attr('src', "phone.png");
               }
               else{
                   $(this).attr('src', "ninja.png");
               }
-            })
+            },
+              function(){
+                console.log('hovering out');
+              })
+
         });
     </script>
 </head>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hover Assignment</title>
+    <link rel="stylesheet" href="hover.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+
+      $(document).ready(function(){
+
+        $("img").hover(function(){
+          var temp=$(this).attr('src');
+          $(this).attr('src', $(this).attr('data-alt-src'));
+          $(this).attr("data-alt-src", temp);
+          })
+
+      });
+    </script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+        <img src="yona1.png" data-alt-src="yona2.png" width="200px" height="200px" />
+        <img src="morgiana1.png" data-alt-src="morgiana2.png" width="200px" height="200px" />
+        <img src="hinata1.png" data-alt-src="hinata2.png" width="200px" height="200px" />
+        <img src="horimiya1.png" data-alt-src="horimiya2.png" width="200px" height="200px" />
+    </div>
+  </body>
+</html>

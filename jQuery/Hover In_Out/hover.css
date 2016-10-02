@@ -6,42 +6,32 @@
   display: inline-block;
 }
 
-#images{
+.yona{
+  border: 3px solid pink;
   display: inline-block;
-  border: 1px solid green;
-  width: 200px;
-  height: 200px;
+  background: red;
+  width: 150px;
+  height: 150px;
 }
-
-.subcontent{
+.morgiana{
+  border: 3px solid pink;
   display: inline-block;
-  border: 1px solid black;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-  margin: 10px;
+  background: red;
+  width: 150px;
+  height: 150px;
 }
 
-.subcontent img{
-  width: 50px;
-  height: auto;
-  top: 25px;
-  right: 25px;
-  position: relative;
-}
-
-.second_subcontent{
+.hinata{
+  border: 3px solid pink;
   display: inline-block;
-  width:250px;
-  height: 250px;
-  border: 1px solid blue;
+  background: red;
+  width: 150px;
+  height: 150px;
 }
-
-.second_subcontent img{
-  position: relative;
-  top: 20px;
-  left: 50px;
-  width: 50px;
-  height: auto;
+.hori{
+  border: 3px solid pink;
+  display: inline-block;
+  background: red;
+  width: 150px;
+  height: 150px;
 }
