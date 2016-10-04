@@ -1,0 +1,145 @@
+*
+#container{
+  width: 970px;
+  height: 900px;
+  border: 2px solid black;
+  position: relative;
+}
+
+#header{
+  background-color: #f2f4f4;
+  width: 950px;
+  height: 150px;
+  display: inline-block;
+  position: relative;
+}
+/*---------------------------------*/
+#header_left{
+  vertical-align: top;
+  display: inline-block;
+  width: 950px;
+  height: 100px;
+  position: relative;
+}
+span.header_left_yard{
+  color:  #4dd0e1;
+  margin: 0px 50px;
+  font-size: 40px;
+}
+span.header_left_text{
+  color: #cfd8dc;
+  margin: 0px 50px;
+  font-size: 40px;
+}
+ul.header_list li{
+  text-decoration: none;
+  display: inline;
+  color: grey;
+  background-color: yellow;
+  border: 1px solid grey;
+  padding: 2px 15px;
+  margin: 3px;
+  border-radius: 2px;
+  font-size: small;
+  font-weight: bold;
+  font-family: monospace;
+
+}
+/*-----------------------------------*/
+
+#header_right{
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid dimgrey;
+}
+/*ul.header_list_right li{
+  text-decoration: none;
+  display: inline;
+  font-size: small;
+  color: white;
+}*/
+.li_grey{
+  background-color: #424242;
+  text-decoration: none;
+  display: inline;
+  font-size: small;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.li_green{
+  background-color:  #00FF66;
+  text-decoration: none;
+  display: inline;
+  font-size: small;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+h4{
+  color:  #0033FF;
+  font-weight: bold;
+}
+span.black{
+  color: black;
+}
+
+/*----------------------------------------------------*/
+#preview{
+  background-color: purple;
+  display: inline-block;
+  width: 950px;
+  height: 300px;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+
+.preview_img1{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 300px;
+  height: 300px;
+}
+
+.preview_img2{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+}
+
+#main{
+  background-color: lightgrey;
+  display: inline-block;
+  width: 950px;
+  position: relative;
+}
+.subcontent{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 300px;
+  background-color: yellow;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main_img{
+  width:25px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}

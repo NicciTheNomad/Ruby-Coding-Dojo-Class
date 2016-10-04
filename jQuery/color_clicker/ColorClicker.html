@@ -11,13 +11,16 @@
              {
                 x = Math.floor((Math.random()*16))
                 color += rgb[x];
+                console.log(x);
+
              }
              return color;
+             console.log(color);
           }
 
           $(document).ready(function(){
              $('#large_box').click(function(){
-                alert('you clicked the big box!');
+                console.log('you clicked the big box!');
          //comment this out when you have figured out what event.stopPropagation is used for
              })
 

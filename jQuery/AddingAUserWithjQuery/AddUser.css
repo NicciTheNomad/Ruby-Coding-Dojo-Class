@@ -5,9 +5,10 @@
   height: auto;
 }
 hr{
-  border-width: 1px;
+  border-width: 50%;
   color: darkgrey;
-  
+  text-align: left;
+
 }
 .addbutton{
   border-radius: 5px;
