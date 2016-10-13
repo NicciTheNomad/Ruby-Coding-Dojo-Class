@@ -81,6 +81,7 @@ ul.white_link li a{
 }
 #header_bar li{
   display: inline;
+
 }
 
 ul.sidebar_list {
@@ -92,6 +93,7 @@ ul.sidebar_list {
 ul.sidebar_list li:before {
   content: "\00bb";
   color: darkred;
+  padding: 5px;
 }
 
 #wrapper{
@@ -135,7 +137,5 @@ ul.sidebar_list li:before {
   margin: 15px;
   padding: 10px;
   background-color: white;
+  list-style-position: inside;
  }
-/*button{
-  display: inline-block;
-}*/

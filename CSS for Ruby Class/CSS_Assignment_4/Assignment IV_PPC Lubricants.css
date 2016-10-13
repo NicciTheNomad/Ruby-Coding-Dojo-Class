@@ -34,6 +34,7 @@ p{
   height: 120px;
 	background: linear-gradient(#f2f3f4, white, #f2f3f4)
 }
+
 h2.abs_position{
 	position: absolute;
 	top: 10px;
@@ -62,6 +63,7 @@ ul.links_1 li a{
 	background: linear-gradient(#f2f3f4, #cacfd2);
 	padding: 0px;
 	margin: 0px;
+	/*width: 100%;*/
 }
 ul.links_2 li {
 	color: darkgrey;
@@ -111,6 +113,69 @@ span{
   margin: 10px;
 	vertical-align: top;
 }
+
+.box_readmore ul li a:after{
+	content: "";
+	border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;
+		border-left: 12px solid #ffc52f;
+	position: absolute; right: -12px; top: 0;
+	z-index: 1;
+
+	content: "";
+	border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;
+		border-left: 14px solid #f1c40f;
+	position: absolute; right: -10px; top: 0;
+	z-index: 1;
+}
+
+.triangle-right{
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+.rectangle {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+.rectangle p{
+	text-align: right;
+}
+#base {
+	background: red;
+	display: inline-block;
+	height: 55px;
+	margin-left: 20px; margin-top: 55px;
+	position: relative;
+	width: 100px;
+	opacity: 50%;
+	}
+
+	#base:before {
+		/*width: 0;
+		height: 0;
+		border-top: 50px solid transparent;
+		border-left: 100px solid red;
+		border-bottom: 50px solid transparent;*/
+
+
+		 border-bottom: 35px solid red;
+		 border-left: 50px solid transparent;
+		 border-right: 50px solid transparent;
+		 content: "";
+		 height: 0;
+		 left: 0;
+		 position: absolute;
+		 top: -35px;
+		 width: 0;
+	}
+
+
+
 #readmore_box{
 	position: absolute;
 	top: 225px;
@@ -127,4 +192,23 @@ span{
 #midbar{
 	width: 950px;
 	color: lightyellow;
+}
+.arrow {
+    background-color:yellow;
+    width:200px;
+    height:100px;
+    box-shadow:10px 10px 5px 5px pink inset;
+}
+.arrow2 {
+	background-color:grey;
+	width:200px;
+	height:100px;
+	box-shadow:10px 10px 5px 5px lightblue inset;
+}
+
+.makebase {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	text-align: right;
 }

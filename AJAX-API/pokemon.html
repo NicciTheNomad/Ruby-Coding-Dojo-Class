@@ -1,0 +1,38 @@
+<!-- Create a website that has all the pictures of the original Pokemon (Pokemon #1 ~ Pokemon #151). Use the PokeAPI to get the images. You can find the image of the first Pokemon on  http://pokeapi.co/media/img/1.png, second Pokemon on http://pokeapi.co/media/img/2.png, third Pokemon on http://pokeapi.co/media/img/3.png, and so on. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon: APIs with AJAX</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function(){
+        // var pokemon="";
+          for(var i=1; i<=151; i++){
+            $('#display_pokemon').append("<img src='http://pokeapi.co/media/img/" + i + ".png'>");
+          //append into paragraph in html
+          }
+          for(var i=1; i<=151; i++){
+            $('p').append("<img src='http://pokeapi.co/media/img/" + i + ".png'>");
+          //append into paragraph in html
+          }
+        });
+      // });
+    </script>
+  </head>
+
+  <body>
+    <div id="display_pokemon">
+
+    </div>
+    <hr>
+    <p>
+
+    </p>
+
+  </body>
+</html>

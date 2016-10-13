@@ -20,15 +20,32 @@
 
           $(document).ready(function(){
              $('#large_box').click(function(){
-                console.log('you clicked the big box!');
+               var randomColorSide = random_color();
+               var randomColorMid = random_color();
+               var randconColorLarge = random_color();
+
+               $(this).children().css('background-color', randomColorSide);
+              //  $(this).children.middle_box().css('background-color', randomColorMid);
+               $(this).css('background-color', randomColorLarge);
+                alert('you clicked the big box!');
          //comment this out when you have figured out what event.stopPropagation is used for
              })
 
              $('.side_box').click(function(event){
+              //  $('')
+              var randomColorSide = random_color();
+              var randomColorMid = random_color();
+              var randconColorLarge = random_color();
+
+              $(this).siblings().css('background-color', randomColorMid);
                 event.stopPropagation();
              })
 
              $('.middle_box').click(function(event){
+               var randomColorSide = random_color();
+               var randomColorMid = random_color();
+               var randconColorLarge = random_color();
+               $(this).parent().css('background-color', randomColorLarge);
                 event.stopPropagation();
              })
           });

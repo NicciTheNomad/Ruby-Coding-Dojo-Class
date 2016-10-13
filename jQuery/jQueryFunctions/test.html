@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing jQuery Functions</title>
+    <link rel="stylesheet" href="test.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+      $(document).ready(function(){
+
+          var myText = $('#myParagraph').text(); //Using .text as a "getter"
+          $('button.first').click(function(){
+            alert(myText);
+          });
+
+          $('button.second').click(function(){
+            $('#myParagraph').text('jQuery you are sneaky!');
+          });
+
+          // $('h1').hover(function(){
+          //   $('#hoverbutton').append("<button class="first" type="button">This is a button created with hover, class first.</button>");
+          // });
+
+          $('button.addhtml').hover(function(){
+            $('#addinghtml').before('before');
+          });
+
+          $('button.addhtml').hover(function(){
+            $('#addinghtml').after('after');
+          });
+
+          $('button.addhtml').hover(function(){
+            $('#addinghtml').prepend('prepend');
+          });
+
+          $(document).on('click','h3',function(){
+            $('div').append("testing append and .on when h3 is clicked ");
+          });
+
+          $(document).on('mouseover', "p", function(){
+            $('#mousediv').html('seeing how .html and .on / mouseover work together! ');
+          });
+
+          $('new_btn').click(function(){
+            $('buttons').append('<button> I am dynamically generated</button>');
+          });
+
+      });
+</script>
+  </head>
+  <body>
+    <div>
+      <h1>This is h1</h1>
+      <br>
+      <p id='myParagraph'> This is my paragraph! </p>
+      <div id='hoverbutton'></div>
+      <button class="first" type="button">click me</button>
+      <button class="second" type="button">click me too!</button>
+      <h3>click here to add buttons</h3>
+    </div>
+    <br>
+    <div id="mousediv">
+
+    </div>
+    <div>
+      <button class="new_btn">Click for another button</button>
+    </div>
+    <div id="addinghtml">
+      <button type="submit" class="addhtml">Add HTML</button>
+
+    </div>
+  </body>
+</html>

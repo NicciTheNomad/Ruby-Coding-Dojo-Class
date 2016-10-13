@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Date Validation Assignment</title>
+    <link rel="stylesheet" href="Date.css" media="screen" title="no title">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+      $('.user_dates').datepicker({
+        dateFormat:"yy-mm-dd"
+      });
+
+      $('#main').click(function(){
+        $('#depart').datepicker();
+      });
+
+      var departuredate=datepicker();
+      console.log(departuredate);
+
+      $('#main').click(function(){
+        $('#return').datepicker();
+      });
+
+      var returndate=datepicker();
+      console.log(returndate);
+
+
+      // var dateFormat=$('#depart').datepicker('option', 'dateFormat');
+
+      $
+      $('#checkdates').click(function(){
+        alert('Thank you ..namehere.. . Your flight leaves on ..enter first date.. and your return flight arrives ..enter last date..');
+        $(".user_dates").val(""); //.val as a setter, clearing fields
+        $(".user_name").val('');
+        return false
+      });
+    });
+    </script>
+
+  </head>
+  <body>
+    <div id="container">
+        <div id="main">
+          <h1>Welcome to the Codingdojo plan-a-Cruise!</h1>
+
+          <form class="information" action="/users" method="post">
+            <label>
+              Departure Date: <input id="depart" class="user_dates" type="text" name="first_name">
+            </label>
+            <br>
+            <label>
+              Ruturn Date:<input id="return" class="user_dates" type="text" name="last_name">
+            </label>
+            <br>
+            <label>
+              Enter Name:<input id="name" class="user_name" type="text" name="last_name">
+            </label>
+            <br>
+          </form>
+          <button id="checkdates" type="submit" name="button">Check Dates!</button>
+        </div>
+    </div>
+  </body>
+</html>

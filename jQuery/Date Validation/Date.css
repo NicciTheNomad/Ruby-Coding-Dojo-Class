@@ -1,0 +1,13 @@
+*
+#container{
+  color: lightblue;
+  width: 970px;
+
+}
+#main{
+  background-color: lightyellow;
+  width: 800px;
+  border: grey 1px solid;
+  display: inline-block;
+  text-align: right;
+}
