@@ -14,10 +14,10 @@
 #
 # Do NOT use an array to do this exercise.
 sum = 0
-newnum = 0
 for i in 0..255
   puts "New number: #{i} "
-  # i=newnum
   sum=sum+i
   puts "Sum: #{sum}"
 end
+
+puts "the average of the sum is: #{sum/i}"
