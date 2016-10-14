@@ -4,7 +4,7 @@
 y = 2
 count = 0
 x = [1,2,3,-4,-6]
-x.each{ |i| if y != x[i]; then count = count + 1; end}
+x.each{ |i| if y < i; then count = count + 1; end}
 
 puts "count is #{count}"
 
