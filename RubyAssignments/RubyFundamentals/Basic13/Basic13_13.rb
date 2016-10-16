@@ -14,3 +14,7 @@ x.collect! {|element|
   (element < 0)? "Dojo":element
 }
 puts x
+
+puts x.collect! {|i|
+  (i < 0)? "Dojo":i
+}

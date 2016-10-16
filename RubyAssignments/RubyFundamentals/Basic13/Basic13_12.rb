@@ -17,7 +17,7 @@ puts "This is array x after push #{x}"
 # y.drop(2)
 # puts "This is array y after drop #{y}"
 
-x.shift(1)
+puts x.shift(1)
 puts "array x after shift 1 #{x}"
 # y.delete(2)
 # puts "This is array y after delete #{y}"
