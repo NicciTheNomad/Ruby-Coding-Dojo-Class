@@ -15,7 +15,8 @@ class Countries
 end
 
 nicaragua = Countries.new("Nicaragua", "5 million", "65%", "$20,000 USD")
-nicaragua.visited 
+puts nicaragua
+nicaragua.visited
 costarica = Countries.new("Costa Rica", "2 million", "88%", "$30,000 USD")
 costarica.visited
 

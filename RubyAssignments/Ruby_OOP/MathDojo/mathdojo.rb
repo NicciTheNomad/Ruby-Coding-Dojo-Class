@@ -6,10 +6,74 @@
 
 
 class MathDojo
-
-
-  def answer #need a method(?) to put self?
-      puts self
+  def initialize
+    @result = 0
   end
 
-MathDojo.new.add(2).add(2, 5).subtract(3, 2)
+  def add(*val)
+    @result += val.inject(&:+)
+    self
+  end
+
+  def subtract(*val)
+    @result -= val.inject(&:+)
+    self
+  end
+
+  def to_s
+    @result
+  end
+end
+answer = MathDojo.new
+p answer.add(0, 2).add(2, 5).subtract(3, 2)
+# puts answer
+#
+# class SimpleMath
+#   def initialize
+#     @result = 0
+#   end
+#
+#   #1 add function
+#   def add(val)
+#     @result += val
+#     self
+#   end
+#
+#   #2 Subtract function
+#   def subtract(val)
+#     @result -= val
+#     self
+#   end
+#
+#   def to_s
+#     @result
+#   end
+# end
+#
+# newNumber = SimpleMath.new
+# p newNumber.add(2).add(2).subtract(1)
+#
+# class SimpleMath
+#   def initialize
+#     @result = 0
+#   end
+#
+#   #1 add function
+#   def add(*val)
+#     @result += val.inject(&:+)
+#     self
+#   end
+#
+#   #2 Subtract function
+#   def subtract(*val)
+#     @result -= val.inject(&:+)
+#     self
+#   end
+#
+#   def to_s
+#     @result
+#   end
+# end
+#
+# newNumber = SimpleMath.new
+# p newNumber.add(1, 1).add(1, 1, 1, 1).subtract(1)
