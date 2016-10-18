@@ -1,10 +1,8 @@
 module MyEnumerable
-  y = --
   def my_each
-    for i in 0..self.length
+    for i in 0..self.length-1
       print self[i]
     end
-    #your code here!
   end
 end
 class Array
