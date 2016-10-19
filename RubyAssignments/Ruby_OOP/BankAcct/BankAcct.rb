@@ -1,3 +1,12 @@
+# BankAccount should track how many accounts the bank currently has, attribute should be of the class
+# BankAccount should have a private attribute called interest rate that is only displayed when the user calls the method account_information
+# BankAccount should have a method called account_information that displays the users account number, total money, checking account balance, saving account balance and interest rate
+# A user should not be able to set any attributes from the BankAccount class
+
+# class BranchAccounts
+#   class_attribute :NumOfAccts
+# end
+# count = 0
 class BankAcct
   attr_accessor :balance_checking, :balance_savings, :deposit, :withdrawl
   def initialize
@@ -5,12 +14,17 @@ class BankAcct
     @balance_savings = 100
     @deposit = 10
     @withdrawl = 10
+    count =
     self
   end
   def display_acct
+    # count = 0
     y = 10.times.map{rand(10)}.join
     puts "The users account number is: #{y}" #generates 10 random numbers from 0-9
+    # count +=1
+    # puts "the current count is: #{count}"
     self
+    # trace.binding.eval('self')
   end
   def deposit_checking(num)
     @balance_checking +=@deposit*num
@@ -21,15 +35,19 @@ class BankAcct
     self
   end
   def withdrawl_checking(num)
-    
-    @balance_checking -=@withdrawl*num
-    if @balance_checking < 0
-      puts "NSF: Transation Canceled"
+    if @balance_checking >= num*@withdrawl
+      @balance_checking -=@withdrawl*num
+    else
+      puts "NSF: Cancel Checking Acct. Transation"
     end
     self
   end
   def withdrawl_savings(num)
-    @balance_savings -=@withdrawl*num
+    if @balance_savings >= @withdrawl*num
+      @balance_savings -=@withdrawl*num
+    else
+      puts "NSF: Cancel Checking Acct. Transaction"
+    end
     self
   end
   def checking_balance
@@ -40,6 +58,14 @@ class BankAcct
     puts "Current savings balance is: #{balance_savings}"
     self
   end
+  #im not sure where to place method "account_information" as it needs interest_rate attribute but I have interest_rate as private and all things following interest_rate are private too... i read that attributes of objects are private by default so maybe i don't need to say "private"
+  # def account_information
+  #   puts .interest_rate
+  # end
+  # private
+  # def interest_rate
+  #   puts "Interest accumalted to YTD: $40 USD"
+  # end
 end
 
 acct1 = BankAcct.new.display_acct.checking_balance.savings_balance
