@@ -5,17 +5,30 @@
 #
 # # Now lets add a new method called attack, which when invoked, should attack another object (i.e., decrease its health) if the object it is attacking inherits from the Human class. Hint: you can check ancestors of a object by using .class.ancestors	??
 
-require_relative 'mammal'
+# require_relative 'mammal'
 
-class human < Mammal
-  attr_accessor :strength, :stealth, :intelligence
+class Human
+  attr_accessor :strength, :stealth, :intelligence, :health
   def initialize
     # allows us to read / write attributes of our instances - i think?
     @strength = 3
     @stealth = 3
     @intelligence = 3
     @health = 100
-    
+  end
+  def attack(obj)
+    if obj.class.ancestors.include?(Human)
+      obj.health -=5
+      true
+    else
+      false
+    end
+  end
+  def display_health
+    @health +=5
+    puts @health
   end
 
 end
+# Now lets add a new method called attack, which when invoked, should attack another object (i.e., decrease its health) if the object it is attacking inherits from the Human class. Hint: you can check ancestors of a object by using .class.ancestors
+human1 = Human.new.display_health

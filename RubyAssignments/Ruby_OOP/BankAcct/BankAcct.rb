@@ -8,23 +8,15 @@
 # end
 # count = 0
 class BankAcct
+  @@count = 0
   attr_accessor :balance_checking, :balance_savings, :deposit, :withdrawl
+
   def initialize
     @balance_checking = 100
     @balance_savings = 100
     @deposit = 10
     @withdrawl = 10
-    count =
-    self
-  end
-  def display_acct
-    # count = 0
-    y = 10.times.map{rand(10)}.join
-    puts "The users account number is: #{y}" #generates 10 random numbers from 0-9
-    # count +=1
-    # puts "the current count is: #{count}"
-    self
-    # trace.binding.eval('self')
+    @interest_rate = 0.012
   end
   def deposit_checking(num)
     @balance_checking +=@deposit*num
@@ -59,14 +51,28 @@ class BankAcct
     self
   end
   #im not sure where to place method "account_information" as it needs interest_rate attribute but I have interest_rate as private and all things following interest_rate are private too... i read that attributes of objects are private by default so maybe i don't need to say "private"
-  # def account_information
-  #   puts .interest_rate
-  # end
-  # private
-  # def interest_rate
-  #   puts "Interest accumalted to YTD: $40 USD"
-  # end
+  def account_information
+    puts .interest_rate
+  end
+  private
+  def interest_rate
+    puts "Interest accumalted to YTD: $40 USD"
+  end
+  def display_acct
+    y = 10.times.map{rand(10)}.join
+    puts "The users account number is: #{y}" #generates 10 random numbers from 0-9
+    @@count+=1
+    puts "the current count is: #{@@count}"
+    self
+    # trace.binding.eval('self')
+  end
 end
 
 acct1 = BankAcct.new.display_acct.checking_balance.savings_balance
 acct2= BankAcct.new.display_acct.deposit_savings(13).deposit_checking(0).withdrawl_savings(2).withdrawl_checking(13).checking_balance.savings_balance
+
+
+# AJ found a way to print accts => puts BankAcct.get_accounts where a method is defined as:
+# def self.get_accounts
+#   @@num_accounts
+# end
