@@ -1,22 +1,14 @@
 # Create a new class called Planet - X
-#
 # Planet should have a name, description and population - X
-#
 # Create a new class called Solar System - X
-#
-# Solar System should be initialized with a name, if not its default name should be 'Andromeda'
-#
-# The Solar System class should contain a list of all planets in it.
-#
-# There should be a count of how many planets are in the Solar System.
-#
-# The planets added to the Solar System should only be from the Planet class
-#
-# Solar System should have a method called Super Nova that destroys all of the planets in it
+# Solar System should be initialized with a name, if not its default name should be 'Andromeda' -x
+# The Solar System class should contain a list of all planets in it. - make an array -  x ??
+# There should be a count of how many planets are in the Solar System.  -x
+# The planets added to the Solar System should only be from the Planet class -x
+# Solar System should have a method called  Super Nova that destroys all of the planets in it
 
 class Planet
   attr_accessor :name, :description, :population
-
   def initialize params = {}
     params.each { |key, value| send "#{key}=", value }
   end
@@ -28,7 +20,9 @@ class Planet
 end
 
 class SolarSystem < Planet
-  def initialize (name)
+  attr_accessor :myplanet
+  def initialize(name)
+    @myplanet = []
     if name == nil then
       @name = 'Andromeda'
     else
@@ -36,8 +30,28 @@ class SolarSystem < Planet
     end
     # puts @name
   end
+  def addPlanet(obj)
+    @myplanet.push(obj)
+    self
+  end
+  def planetCount
+    @myplanet.length
+  end
+  def displayPlanetNames
+    @myplanet.each { |name| print name, " " }
+  end
+  def superNova
+    @myplanet.clear
+  end
 end
 
+anotherplanet = Planet.new name: 'Ashton', description: 'silly boy', population: 555500
+anotherSolarSystem = SolarSystem.new(nil)
+puts anotherSolarSystem.addPlanet(anotherplanet).planetCount
+# puts anotherplanet
+puts anotherplanet.name
+# puts anotherplanet.superNova
+# puts anotherSolarSystem.displayPlanetNames
 # planet1 = Planet.new name: 'Ashton', description: 'silly giggling planet', population: 52000
 # mySolarSystem = SolarSystem.new('') #no param means should default to Andromeda
 #

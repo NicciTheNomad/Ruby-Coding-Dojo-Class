@@ -4,9 +4,9 @@ RSpec.describe Planet do
     before do
       @planet = Planet.new
     end
-    # before do
-    #   @systemPlanet = SolarSystem.new
-    # end
+    before do
+      @systemPlanet = SolarSystem.new
+    end
     it 'has a getter / setter for attr_accessors' do
       @planet.name = "Ollie"
       @planet.description = "Planet Ollie Description"
@@ -20,6 +20,9 @@ RSpec.describe Planet do
       solarSystem2 = SolarSystem.new(nil)
       expect(solarSystem1.name).to eq("Ollie")
       expect(solarSystem2.name).to eq("Andromeda")
+    end
+    it 'creates a planet' do
+      @systemPlanet.addPlanet(@planet)
     end
   end
 end
