@@ -14,9 +14,4 @@ class Human
       false
     end
   end
-  def display_health
-    @health +=5
-    puts @health
-  end
 end
-human1 = Human.new.display_health
