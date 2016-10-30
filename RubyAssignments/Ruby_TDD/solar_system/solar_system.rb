@@ -48,14 +48,4 @@ end
 anotherplanet = Planet.new name: 'Ashton', description: 'silly boy', population: 555500
 anotherSolarSystem = SolarSystem.new(nil)
 puts anotherSolarSystem.addPlanet(anotherplanet).planetCount
-# puts anotherplanet
 puts anotherplanet.name
-# puts anotherplanet.superNova
-# puts anotherSolarSystem.displayPlanetNames
-# planet1 = Planet.new name: 'Ashton', description: 'silly giggling planet', population: 52000
-# mySolarSystem = SolarSystem.new('') #no param means should default to Andromeda
-#
-# puts planet1.name
-# puts planet1.description
-# puts planet1.population
-# puts mySolarSystem.name
