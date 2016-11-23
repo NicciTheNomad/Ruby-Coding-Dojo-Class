@@ -1,0 +1,13 @@
+<h1>Welcome to the Great Number Game!</h1>
+<p>
+  I am thinking of a number between 1 - 100
+</p>
+<p>
+  Take a guess!
+</p>
+<form action="/" method="post">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <input type="text" name="name">
+  <input type="submit" value="Create User Number">
+</form>
+<button type="submit">Submit</button>

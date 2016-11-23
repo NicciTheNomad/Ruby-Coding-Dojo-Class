@@ -1,0 +1,26 @@
+<p>
+  <%= flash[:update] %>
+</p>
+<div style="width:500px;border:1px solid #000;">
+  <p>
+    randomword14characters
+  </p>
+  <p><script type="text/javascript">
+
+  </script>
+    function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 5; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+  </script></p>
+
+</div>
+
+<a href="/update"><button>Generate Random Word</button></a>
+<a href="/reset"><button>Reset!</button></a>

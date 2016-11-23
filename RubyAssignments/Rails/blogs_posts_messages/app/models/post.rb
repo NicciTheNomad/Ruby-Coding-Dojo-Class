@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
   belongs_to :blog
+  belongs_to :user
   validates :title, :content, presence: true
-  validates :title, length: { :is => 7 }
+  validates :title, length: {minimum: 3}
 end
