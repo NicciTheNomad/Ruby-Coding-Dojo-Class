@@ -2,8 +2,6 @@
 
 one:
   comment: MyText
-  model: MyString
 
 two:
   comment: MyText
-  model: MyString
