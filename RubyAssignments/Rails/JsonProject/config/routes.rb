@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'user#index'
   get 'user/create' => 'user#new'
   get 'user/1' => 'user#first'
+  get 'reset' => 'user#reset'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
