@@ -7,7 +7,7 @@ class SurveyController < ApplicationController
     session[:location] = params[:location]
     session[:language] = params[:language]
     session[:comment] = params[:comment]
-    session[:counter] = 1 if !session[:counter]
+    session[:counter] = 0 if !session[:counter]
     session[:counter] += 1
     # session[:params] = params
     puts params
