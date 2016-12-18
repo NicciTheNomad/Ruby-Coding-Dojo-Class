@@ -1,23 +1,17 @@
 <p>
   <%= flash[:update] %>
 </p>
-<div style="width:500px;border:1px solid #000;">
-  <p>
-    randomword14characters
-  </p>
-  <p><script type="text/javascript">
+<div style="width:500px;border:1px solid #000;background:yellow;font-size:32px">
 
-  </script>
-    function makeid()
-{
-    var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  <p style = "text-align:center"><script type="text/javascript">
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-    for( var i=0; i < 5; i++ )
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+  for( var i=0; i < 14; i++ ) {
+      text = possible.charAt(Math.floor(Math.random() * possible.length));
+      document.write(text);
+  }
 
-    return text;
-}
   </script></p>
 
 </div>
